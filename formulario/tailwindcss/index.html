@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido Perlas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&family=Patrick+Hand+SC&family=Sacramento&display=swap');
+
+    body{
+      font-family:  "Patrick Hand SC", cursive;
+    }
+  </style>
+</head>
+<body class = "bg-red-100 text-center ">
+  <div class = "bg-purple-800 text-white  font-bold">
+    <h1 class = " pt-3 text-4xl">Hace tu pedido de perlas</h1>
+    <h2 class = " py-3 text-2xl">Las bolsitas son de 25grs</h2>
+  </div>
+  <div class = "mt-20">
+    <form>
+      <label for="material" class = " font-bold">Material:</label>
+      <br>
+      <select required class = "border-2 border-purple-400 rounded-md w-1/6">
+          <option value="">Seleccione el material deseado</option>
+          <option value="Madera">Madera</option>
+          <option value="Plastico">Plastico</option>
+          <option value="Acrilico">Acrilico</option>
+          <option value="Metal">Metal</option>
+      </select>
+      <br>
+      <label for="color" class = " font-bold">Color:</label>
+      <br>
+      <input type="text" class = "border-2 border-purple-400 rounded-md w-1/6" required>
+      <br>
+      <label for="tamaño" class = " font-bold">Tamaño (en mm):</label>
+      <br>
+      <input type="number" class = "border-2 border-purple-400 rounded-md w-1/6" required min="2" max="20" placeholder="8">
+      <br>
+      <label for="paquetes" class = " font-bold">Cantidad de paquetes:</label>
+      <br>
+      <input type="number" class = "border-2 border-purple-400 rounded-md w-1/6" required min="1" placeholder="1">
+      <br>
+      <input type="submit" class = "bg-purple-800 text-white p-2 rounded-md mt-5" value="Enviar Pedido">
+    </form>
+  </div>
+</body>
+</html>
