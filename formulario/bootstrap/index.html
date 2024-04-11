@@ -25,7 +25,7 @@
       color: #fff;
     }
 
-    .color-border{
+    .color-border {
       border-color: rgba(251, 154, 209, 0.55);
     }
   </style>
@@ -36,26 +36,34 @@
     <h1>Hace tu pedido de perlas</h1>
     <h2>Las bolsitas son de 25grs</h2>
   </div>
-  <div class="text-center">
-    <form class = "mt-5">
-      <label for="material" class="form-label">Material:</label>
-      <select class="form-control color-border" required>
-        <option value="">Seleccione el material deseado</option>
-        <option value="Madera">Madera</option>
-        <option value="Plastico">Plastico</option>
-        <option value="Acrilico">Acrilico</option>
-        <option value="Metal">Metal</option>
-      </select>
-      <br>
-      <label for="color" class="form-label">Color:</label>
-      <input type="text" class="form-control color-border" required>
-      <br>
-      <label for="tamaño" class="form-label">Tamaño (en mm):</label>
-      <input type="number" class="form-control color-border" required min="2" max="20" placeholder="8">
-      <br>
-      <label for="paquetes" class="form-label">Cantidad de paquetes:</label>
-      <input type="number" class="form-control color-border" required min="1" placeholder="1">
-      <br>
+  <div>
+    <form class="mt-5 text-center">
+      <div class="form-group">
+        <label for="material" class="form-label">Material:</label>
+        <br>
+        <select class="form-control-sm color-border w-25" required>
+          <option value="">Seleccione el material deseado</option>
+          <option value="Madera">Madera</option>
+          <option value="Plastico">Plastico</option>
+          <option value="Acrilico">Acrilico</option>
+          <option value="Metal">Metal</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="color" class="form-label">Color:</label>
+        <br>
+        <input type="text" class="form-control-sm color-border w-25" required>
+      </div>
+      <div class="form-group">
+        <label for="tamaño" class="form-label">Tamaño (en mm):</label>
+        <br>
+        <input type="number" class="form-control-sm color-border w-25" required min="2" max="20" placeholder="8">
+      </div>
+      <div class="form-group">
+        <label for="paquetes" class="form-label">Cantidad de paquetes:</label>
+        <br>
+        <input type="number" class="form-control-sm color-border w-25" required min="1" placeholder="1">
+      </div>
       <input type="submit" class="btn boton mt-3" value="Enviar Pedido">
     </form>
   </div>
