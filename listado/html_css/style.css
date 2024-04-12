@@ -27,12 +27,13 @@ body {
   
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
   
   .item {
     padding: 20px;
+    align-items: center;
     text-align: left;
     background-color: #FFF8F0;
     border: 1px solid transparent;
