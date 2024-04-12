@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido Perlas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class = titulo>
+    <h1>Hace tu pedido de perlas</h1>
+    <h2>Las bolsitas son de 25grs</h2>
+  </div>
+  <div class = "buscador">
+    <form>
+      <label for="material">Material:</label>
+      <select required>
+          <option value="">Seleccione el material deseado</option>
+          <option value="Madera">Madera</option>
+          <option value="Plastico">Plastico</option>
+          <option value="Acrilico">Acrilico</option>
+          <option value="Metal">Metal</option>
+      </select>
+      <br>
+      <label for="color">Color:</label>
+      <input type="text" required>
+      <br>
+      <label for="tamaño">Tamaño (en mm):</label>
+      <input type="number" required min="2" max="20" placeholder="8">
+      <br>
+      <label for="paquetes">Cantidad de paquetes:</label>
+      <input type="number" required min="1" placeholder="1">
+      <br>
+      <input type="submit" value="Enviar Pedido">
+    </form>
+  </div>
+</body>
+</html>
